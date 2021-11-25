@@ -13,6 +13,7 @@ weatherForm.addEventListener('submit', (e) =>{
 
     if(!location){
         messageOne.textContent = '';
+        messageTwo.textContent = '';
         return messageTwo.textContent = 'Provide the location';
     } 
 
@@ -24,10 +25,11 @@ weatherForm.addEventListener('submit', (e) =>{
             messageTwo.textContent = data.error;
         }
         else {
-            messageOne.textContent = data.location + '' + data.forecast;
+            messageOne.textContent = data.location;
+            messageTwo.textContent = data.forecast;
 
-            console.log(data.location);
-            console.log(data.forecast);
+            // console.log(data.location);
+            // console.log(data.forecast);
         }
         
     });
