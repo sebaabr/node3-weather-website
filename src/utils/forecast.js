@@ -16,7 +16,7 @@ const forecast = async function(latitude, longitude, callback){
             }
             else{
                 // console.log(responce);
-                callback(undefined, `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It it feels like ${body.current.feelslike} degrees.`);
+                callback(undefined, `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It it feels like ${body.current.feelslike} degrees out. The humidity is ${body.current.humidity}%`);
             }
         });
     /*
