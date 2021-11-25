@@ -1,18 +1,3 @@
-console.log("Client side js file is loaded!");
-
-
-// fetch(`http://localhost:3000/weather?address=!`)
-// .then(res => res.json())
-// .then(data => {
-//     if(data.error)
-//         console.error(data.error);
-//     else{
-//         console.log(data.location);
-//         console.log(data.forecast);
-
-//     }
-// });
-
 const weatherForm = document.querySelector('form');
 const searchEl = document.querySelector("input");
 const messageOne = document.querySelector('#message-1');
